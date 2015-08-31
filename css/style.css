@@ -1,0 +1,34 @@
+h1 {
+  @incude titulos(4em); }
+
+p {
+  color: #000; }
+
+.list {
+  display: inline-block;
+  color: red; }
+  .list li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 1em; }
+  .list a {
+    background-color: yellow;
+    padding: 0.5em; }
+
+.parrafo {
+  background-color: red; }
+
+h1 + p {
+  margin-top: 25px; }
+
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #ccc;
+  border: 1px solid #111;
+  padding: 25px; }
+
+/*# sourceMappingURL=style.css.map */

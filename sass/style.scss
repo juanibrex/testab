@@ -1,0 +1,62 @@
+//Variables
+$verde: #000;
+$rojo: red;
+$margen: 25px;
+$list-padding: 1em;
+
+//Mixin
+@mixin titulos($fsize) {
+	font-size: $fsize;
+	color: grey;
+	margin-bottom: 2em;
+}
+
+
+//SCSS
+
+//Importamos el mixin de los h1
+h1 {
+	@incude titulos(4em);
+}
+
+p {color: $verde;}
+
+.list{
+	display: inline-block;
+	color: $rojo;
+
+	li{
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		padding: $list-padding;
+	}
+	a{
+		background-color: yellow;
+		padding: $list-padding /2;
+	}
+}
+
+li {
+
+}
+
+.parrafo{background-color: $rojo;}
+
+h1 + p {
+	margin-top: $margen;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box { 
+	@include border-radius(10px);
+	background-color: #ccc;
+	border: 1px solid #111;
+	padding: $margen;
+}
