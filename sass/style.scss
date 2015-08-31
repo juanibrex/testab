@@ -8,7 +8,7 @@ $list-padding: 1em;
 @mixin titulos($fsize) {
 	font-size: $fsize;
 	color: grey;
-	margin-bottom: 2em;
+	margin-bottom: $fsize / 2;
 }
 
 
@@ -16,7 +16,7 @@ $list-padding: 1em;
 
 //Importamos el mixin de los h1
 h1 {
-	@incude titulos(4em);
+	@include titulos(4em);
 }
 
 p {color: $verde;}
